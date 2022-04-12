@@ -1,5 +1,27 @@
-{{page-title 'BookApp'}}
-<h1>
-  Book App
-</h1>
-{{outlet}}
+<div class="app">
+  <nav class="main-nav">
+    <h1 class="logo">
+      <LinkTo @route="index">
+        <img src="/logo.svg" alt="Ember Library" />
+        <span class="sr-only">
+          Ember Library
+        </span>
+      </LinkTo>
+    </h1>
+    <ul>
+      <li>
+        <LinkTo @route="author">
+          Authors
+        </LinkTo>
+      </li>
+      <li>
+        <LinkTo @route="books">
+          Books
+        </LinkTo>
+      </li>
+    </ul>
+  </nav>
+  <main class="app-content">
+    {{outlet}}
+  </main>
+</div>
