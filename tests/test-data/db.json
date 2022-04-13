@@ -1,0 +1,28 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "type": "author",
+      "firstName": "C.S.",
+      "lastName": "Lewis"
+    },
+    {
+      "id": 2,
+      "type": "author",
+      "firstName": "Edgar",
+      "lastName": "Poe"
+    },
+    {
+      "id": 3,
+      "type": "author",
+      "firstName": "A.S.",
+      "lastName": "Pushkin"
+    },
+    {
+      "id": 4,
+      "type": "author",
+      "firstName": "Bob",
+      "lastName": "Martin"
+    }
+  ]
+}
