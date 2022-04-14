@@ -4,6 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'book-app',
     environment,
+    backEndUrl: 'http://localhost:3000',
     rootURL: '/',
     locationType: 'history',
     EmberENV: {
