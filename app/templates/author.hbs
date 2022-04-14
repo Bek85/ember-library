@@ -21,7 +21,7 @@
   <ul class="collection">
     {{#each this.model as |author|}}
       <li>
-        <LinkTo @route="author.detail">
+        <LinkTo @route="author.detail" @model={{author}}>
           <strong>
             {{author.lastName}}
           </strong>

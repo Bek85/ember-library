@@ -1,2 +1,27 @@
-{{page-title "Detail"}}
-{{outlet}}
+{{page-title 'Detail'}}
+<div class="slide-out-bg"></div>
+<div class="slide-out">
+  <div class="slide-out-card">
+    <LinkTo @route="author" class="btn-back">
+      <span class="sr-only">
+        Back
+      </span>
+    </LinkTo>
+    <div class="slide-out-heading">
+      <div class="title">
+        <h3>
+          Author Detail
+        </h3>
+        <div class="actions">
+          <a href class="btn-pop">
+            edit
+          </a>
+          <button class="btn-recessed" type="button">
+            delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="slide-out-content"></div>
+  </div>
+</div>

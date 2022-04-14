@@ -8,4 +8,10 @@ export default class DataServiceService extends Service {
     let response = await fetch(`${url.backEndUrl}/authors`);
     return await response.json();
   }
+
+  async getAuthor(id) {
+    let url = getOwner(this).application;
+    let response = await fetch(`${url.backEndUrl}/authors/${id}`);
+    return await response.json();
+  }
 }
