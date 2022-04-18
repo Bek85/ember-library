@@ -3,15 +3,25 @@ import Service from '@ember/service';
 import { getOwner } from '@ember/application';
 
 export default class DataServiceService extends Service {
+  baseUrl = getOwner(this).application.backEndUrl;
+
   async getAuthors() {
-    let url = getOwner(this).application;
-    let response = await fetch(`${url.backEndUrl}/authors`);
+    let response = await fetch(`${this.baseUrl}/authors`);
     return await response.json();
   }
 
   async getAuthor(id) {
-    let url = getOwner(this).application;
-    let response = await fetch(`${url.backEndUrl}/authors/${id}`);
+    let response = await fetch(`${this.baseUrl}/authors/${id}`);
     return await response.json();
+  }
+
+  async editAuthor(author) {
+    return await fetch(`${this.baseUrl}/authors/${author.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(author),
+    });
   }
 }

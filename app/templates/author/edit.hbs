@@ -2,7 +2,7 @@
 <div class="slide-out-bg"></div>
 <div class="slide-out">
   <div class="slide-out-card">
-    <LinkTo @route="author" class="btn-back">
+    <LinkTo @route="author.detail" @model={{this.model}} class="btn-back">
       <span class="sr-only">
         Back
       </span>
@@ -27,7 +27,7 @@
             type="text"
             placeholder="First Name"
             value={{this.model.firstName}}
-            {{on 'input' this.changeFirstName}}
+            {{on 'input' this.changeFirstName value='target.value'}}
           />
         </div>
         <div class="field">
@@ -38,6 +38,7 @@
             type="text"
             value={{this.model.lastName}}
             placeholder="Last Name"
+            {{on 'input' this.changeLastName value='target.value'}}
           />
         </div>
         <div class="form-footer">
