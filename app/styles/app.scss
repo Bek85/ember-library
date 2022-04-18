@@ -1,5 +1,23 @@
 @import 'embercasts-library';
 
-.panel-heading .search::after {
+.panel-heading .search::after,
+.btn-back::before {
   content: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: ($m-gutter * 0.8) $m-gutter;
+  border: 0;
+  border-radius: $m-border-radius;
+
+  background: $c-secondary;
+  color: $c-white;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }

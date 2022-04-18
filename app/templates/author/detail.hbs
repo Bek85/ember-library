@@ -6,18 +6,24 @@
       <span class="sr-only">
         Back
       </span>
+      ←
     </LinkTo>
     <div class="slide-out-heading">
       <div class="title">
         <h3>
-          Author Detail
+          {{this.model.firstName}}
+          {{this.model.lastName}}
         </h3>
         <div class="actions">
-          <a href class="btn-pop">
-            edit
-          </a>
+          <LinkTo
+            @route="author.edit"
+            @model={{this.model}}
+            class="btn btn-pop"
+          >
+            Edit
+          </LinkTo>
           <button class="btn-recessed" type="button">
-            delete
+            Delete
           </button>
         </div>
       </div>

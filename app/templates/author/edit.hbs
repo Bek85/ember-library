@@ -1,0 +1,51 @@
+{{page-title 'Edit'}}
+<div class="slide-out-bg"></div>
+<div class="slide-out">
+  <div class="slide-out-card">
+    <LinkTo @route="author" class="btn-back">
+      <span class="sr-only">
+        Back
+      </span>
+      ←
+    </LinkTo>
+    <div class="slide-out-heading">
+      <div class="title">
+        <h3>
+          Edit
+          {{this.model.firstName}}
+          {{this.model.lastName}}
+        </h3>
+      </div>
+    </div>
+    <div class="slide-out-content">
+      <form {{on 'submit' this.saveAuthor}}>
+        <div class="field">
+          <label>
+            First Name:
+          </label>
+          <input
+            type="text"
+            placeholder="First Name"
+            value={{this.model.firstName}}
+            {{on 'input' this.changeFirstName}}
+          />
+        </div>
+        <div class="field">
+          <label>
+            Last Name:
+          </label>
+          <input
+            type="text"
+            value={{this.model.lastName}}
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn-submit">
+            save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
