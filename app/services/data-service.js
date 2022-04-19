@@ -24,4 +24,14 @@ export default class DataServiceService extends Service {
       body: JSON.stringify(author),
     });
   }
+
+  async createAuthor(author) {
+    return await fetch(`${this.baseUrl}/authors`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(author),
+    });
+  }
 }

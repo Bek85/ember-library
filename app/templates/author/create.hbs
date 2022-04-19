@@ -1,0 +1,50 @@
+{{page-title 'Create'}}
+<div class="slide-out-bg"></div>
+<div class="slide-out">
+  <div class="slide-out-card">
+    <LinkTo @route="author" class="btn-back">
+      <span class="sr-only">
+        Back
+      </span>
+      ←
+    </LinkTo>
+    <div class="slide-out-heading">
+      <div class="title">
+        <h3>
+          New Author
+        </h3>
+      </div>
+    </div>
+    <div class="slide-out-content">
+      <form {{on 'submit' this.createAuthor}}>
+        <div class="field">
+          <label>
+            First Name:
+          </label>
+          <Input
+            @type="text"
+            placeholder="First Name"
+            @value={{this.model.firstName}}
+            {{!-- {{on 'input' this.changeFirstName value='target.value'}} --}}
+          />
+        </div>
+        <div class="field">
+          <label>
+            Last Name:
+          </label>
+          <Input
+            @type="text"
+            @value={{this.model.lastName}}
+            placeholder="Last Name"
+            {{!-- {{on 'input' this.changeLastName value='target.value'}} --}}
+          />
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn-submit">
+            Create
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
