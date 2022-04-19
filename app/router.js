@@ -13,4 +13,5 @@ Router.map(function () {
     this.route('create');
   });
   this.route('books');
+  this.route('not-found', { path: '*path' });
 });

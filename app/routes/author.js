@@ -14,12 +14,12 @@ function wait(delay) {
 export default class AuthorRoute extends Route {
   @service dataService;
 
-  // async model() {
-  //   await wait(2000);
-  //   return this.dataService.getAuthors();
-  // }
-
-  model() {
-    return reject(this.dataService.getAuthors());
+  async model() {
+    await wait(2000);
+    return this.dataService.getAuthors();
   }
+
+  // model() {
+  //   return reject(this.dataService.getAuthors());
+  // }
 }
