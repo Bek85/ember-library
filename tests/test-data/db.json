@@ -1,22 +1,10 @@
 {
   "authors": [
     {
-      "id": 1,
-      "type": "author",
-      "firstName": "Bob",
-      "lastName": "lahBlah"
-    },
-    {
       "id": 2,
       "type": "author",
       "firstName": "Edgar",
       "lastName": "Poe"
-    },
-    {
-      "id": 3,
-      "type": "author",
-      "firstName": "test2",
-      "lastName": "test2"
     },
     {
       "id": 4,
@@ -35,33 +23,9 @@
       "id": 6
     },
     {
-      "firstName": "Yo Blah",
-      "lastName": "Jo Blah",
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "firstName": "test",
-      "lastName": "test",
-      "id": 10
-    },
-    {
       "firstName": "Bekzod",
       "lastName": "Akbarov",
       "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "firstName": "test",
-      "lastName": "test2",
-      "id": 13
     }
   ]
 }

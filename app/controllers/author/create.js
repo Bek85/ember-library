@@ -13,20 +13,7 @@ export default class AuthorCreateController extends Controller {
   @action
   async createAuthor(evt) {
     evt.preventDefault();
-    await this.dataService.createAuthor({
-      firstName: this.model.firstName,
-      lastName: this.model.lastName,
-    });
+    await this.dataService.createAuthor(this.model);
     this.router.transitionTo('author');
   }
-
-  // @action
-  // changeFirstName() {
-  //   this.model.firstName = this.firstName;
-  // }
-
-  // @action
-  // changeLastName() {
-  //   this.model.lastName = this.lastName;
-  // }
 }

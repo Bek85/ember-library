@@ -5,14 +5,20 @@ import { getOwner } from '@ember/application';
 export default class DataServiceService extends Service {
   baseUrl = getOwner(this).application.backEndUrl;
 
-  async getAuthors() {
-    let response = await fetch(`${this.baseUrl}/authors`);
-    return await response.json();
+  async createAuthor(author) {
+    return await fetch(`${this.baseUrl}/authors`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(author),
+    });
   }
 
-  async getAuthor(id) {
-    let response = await fetch(`${this.baseUrl}/authors/${id}`);
-    return await response.json();
+  async deleteAuthor(id) {
+    return await fetch(`${this.baseUrl}/authors/${id}`, {
+      method: 'DELETE',
+    });
   }
 
   async editAuthor(author) {
@@ -25,13 +31,13 @@ export default class DataServiceService extends Service {
     });
   }
 
-  async createAuthor(author) {
-    return await fetch(`${this.baseUrl}/authors`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(author),
-    });
+  async getAuthors() {
+    let response = await fetch(`${this.baseUrl}/authors`);
+    return await response.json();
+  }
+
+  async getAuthor(id) {
+    let response = await fetch(`${this.baseUrl}/authors/${id}`);
+    return await response.json();
   }
 }

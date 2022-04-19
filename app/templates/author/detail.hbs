@@ -22,7 +22,11 @@
           >
             Edit
           </LinkTo>
-          <button class="btn-recessed" type="button">
+          <button
+            class="btn-recessed"
+            type="button"
+            {{on 'click' (fn this.deleteAuthor this.model.id)}}
+          >
             Delete
           </button>
         </div>
