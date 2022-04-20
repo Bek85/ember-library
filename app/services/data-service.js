@@ -1,9 +1,8 @@
 import Service from '@ember/service';
-// import ENV from 'book-app/config/environment';
-import { getOwner } from '@ember/application';
+import ENV from 'book-app/config/environment';
 
 export default class DataServiceService extends Service {
-  baseUrl = getOwner(this).application.backEndUrl;
+  baseUrl = ENV.backEndUrl;
 
   async createAuthor(author) {
     return await fetch(`${this.baseUrl}/authors`, {
@@ -31,8 +30,9 @@ export default class DataServiceService extends Service {
     });
   }
 
-  async getAuthors() {
-    let response = await fetch(`${this.baseUrl}/authors`);
+  async getAuthors(searchTerm) {
+    let query = searchTerm ? `?q=${searchTerm}` : '';
+    let response = await fetch(`${this.baseUrl}/authors${query}`);
     return await response.json();
   }
 

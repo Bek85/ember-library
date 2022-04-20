@@ -12,8 +12,7 @@
       <div class="title">
         <h3>
           Edit
-          {{this.model.firstName}}
-          {{this.model.lastName}}
+          {{this.model.author}}
         </h3>
       </div>
     </div>
@@ -26,7 +25,7 @@
           <input
             type="text"
             placeholder="First Name"
-            value={{this.model.firstName}}
+            value={{this.model.author}}
             {{on 'input' this.changeFirstName value='target.value'}}
           />
         </div>

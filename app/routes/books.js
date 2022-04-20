@@ -11,6 +11,6 @@ function wait(delay) {
 
 export default class BooksRoute extends Route {
   async model() {
-    return await wait(2000);
+    return await wait(1000);
   }
 }

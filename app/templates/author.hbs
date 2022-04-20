@@ -5,7 +5,7 @@
     <Input
       @type="text"
       placeholder="Search by Author Name"
-      @value={{this.search}}
+      @value={{this.searchTerm}}
     />
   </div>
   <LinkTo @route="author.create" class="btn-new">
@@ -19,14 +19,13 @@
     Authors
   </h3>
   <ul class="collection">
-    {{#each this.model as |author|}}
+    {{#each this.model as |author i|}}
       <li>
         <LinkTo @route="author.detail" @model={{author}}>
           <strong>
-            {{author.lastName}}
+            {{i}}
+            {{author.author}}
           </strong>
-          ,
-          {{author.firstName}}
         </LinkTo>
       </li>
     {{/each}}
