@@ -18,17 +18,23 @@
   <h3 class="panel-title">
     Authors
   </h3>
-  <ul class="collection">
-    {{#each this.model as |author i|}}
-      <li>
-        <LinkTo @route="author.detail" @model={{author}}>
-          <strong>
-            {{inc-by-one i}}
-            {{author.author}}
-          </strong>
-        </LinkTo>
-      </li>
-    {{/each}}
-  </ul>
+  {{#if this.isLoading}}
+    <div class="welcome-page">
+      <Spinner />
+    </div>
+  {{else}}
+    <ul class="collection">
+      {{#each this.model as |author i|}}
+        <li>
+          <LinkTo @route="author.detail" @model={{author}}>
+            <strong>
+              {{inc-by-one i}}
+              {{author.author}}
+            </strong>
+          </LinkTo>
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
 </div>
 {{outlet}}
