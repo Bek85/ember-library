@@ -1,5 +1,5 @@
 import Service from '@ember/service';
-import ENV from 'book-app/config/environment';
+import ENV from 'ember-library/config/environment';
 
 export default class DataServiceService extends Service {
   baseUrl = ENV.backEndUrl;

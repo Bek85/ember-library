@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'book-app',
+    modulePrefix: 'ember-library',
     environment,
     backEndUrl: 'http://localhost:3000',
     rootURL: '/',
