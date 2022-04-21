@@ -26,12 +26,7 @@
     <ul class="collection">
       {{#each this.model as |author i|}}
         <li>
-          <LinkTo @route="author.detail" @model={{author}}>
-            <strong>
-              {{inc-by-one i}}
-              {{author.author}}
-            </strong>
-          </LinkTo>
+          <AuthorListItem @model={{author}} @index={{i}} />
         </li>
       {{/each}}
     </ul>
