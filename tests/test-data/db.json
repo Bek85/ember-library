@@ -243,7 +243,9 @@
       "link": "https://en.wikipedia.org/wiki/Nostromo\n",
       "pages": 320,
       "title": "Nostromo",
-      "year": 1904
+      "year": 1904,
+      "firstName": "Joseph",
+      "lastName": "Conrad"
     },
     {
       "id": 21,
@@ -254,7 +256,9 @@
       "link": "https://en.wikipedia.org/wiki/Great_Expectations\n",
       "pages": 194,
       "title": "Great Expectations",
-      "year": 1861
+      "year": 1861,
+      "firstName": "Charles",
+      "lastName": "Dickens"
     },
     {
       "id": 22,
@@ -265,7 +269,9 @@
       "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
       "pages": 596,
       "title": "Jacques the Fatalist",
-      "year": 1796
+      "year": 1796,
+      "firstName": "Denis",
+      "lastName": "Diderot"
     },
     {
       "id": 23,
@@ -276,7 +282,9 @@
       "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz\n",
       "pages": 600,
       "title": "Berlin Alexanderplatz",
-      "year": 1929
+      "year": 1929,
+      "firstName": "Alfred",
+      "lastName": "Döblin"
     },
     {
       "id": 24,
