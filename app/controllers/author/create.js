@@ -12,7 +12,6 @@ export default class AuthorCreateController extends Controller {
 
   @action
   async createAuthor(author) {
-    // evt.preventDefault();
     await this.dataService.createAuthor(author);
     this.router.transitionTo('author');
   }

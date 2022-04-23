@@ -17,35 +17,6 @@
       </div>
     </div>
     <div class="slide-out-content">
-      {{!-- <form {{on 'submit' this.saveAuthor}}>
-        <div class="field">
-          <label>
-            First Name:
-          </label>
-          <input
-            type="text"
-            placeholder="First Name"
-            value={{this.model.author}}
-            {{on 'input' this.changeFirstName value='target.value'}}
-          />
-        </div>
-        <div class="field">
-          <label>
-            Last Name:
-          </label>
-          <input
-            type="text"
-            value={{this.model.lastName}}
-            placeholder="Last Name"
-            {{on 'input' this.changeLastName value='target.value'}}
-          />
-        </div>
-        <div class="form-footer">
-          <button type="submit" class="btn-submit">
-            save
-          </button>
-        </div>
-      </form> --}}
       <AuthorForm
         @saveAuthor={{this.editAuthor}}
         @author={{this.model}}
