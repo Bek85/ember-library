@@ -1,0 +1,23 @@
+<form {{on 'submit' this.submitChanges}}>
+  <div class="field">
+    <label>
+      First Name:
+    </label>
+    <Input @type="text" placeholder="First Name" @value={{@author.firstName}} />
+  </div>
+  <div class="field">
+    <label>
+      Last Name:
+    </label>
+    <Input @type="text" @value={{@author.lastName}} placeholder="Last Name" />
+  </div>
+  <div class="form-footer">
+    <button type="submit" class="btn-submit">
+      {{#if @buttonText}}
+        Save Changes
+      {{else}}
+        Create a new author
+      {{/if}}
+    </button>
+  </div>
+</form>

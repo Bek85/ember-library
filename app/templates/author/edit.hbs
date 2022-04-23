@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="slide-out-content">
-      <form {{on 'submit' this.saveAuthor}}>
+      {{!-- <form {{on 'submit' this.saveAuthor}}>
         <div class="field">
           <label>
             First Name:
@@ -45,7 +45,12 @@
             save
           </button>
         </div>
-      </form>
+      </form> --}}
+      <AuthorForm
+        @saveAuthor={{this.editAuthor}}
+        @author={{this.model}}
+        @buttonText="Edit Author"
+      />
     </div>
   </div>
 </div>

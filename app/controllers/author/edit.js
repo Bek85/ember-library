@@ -7,9 +7,8 @@ export default class AuthorEditController extends Controller {
   @service() dataService;
 
   @action
-  async saveAuthor(evt) {
-    evt.preventDefault();
-    await this.dataService.editAuthor(this.model);
+  async editAuthor(author) {
+    await this.dataService.editAuthor(author);
     this.router.transitionTo('author.detail', this.model.id);
   }
 
