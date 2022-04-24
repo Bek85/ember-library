@@ -297,69 +297,75 @@
     },
     {
       "id": 24,
-      "author": "Fyodor Dostoevsky",
+      "author": "Fyodor",
       "country": "Russia",
       "imageLink": "images/crime-and-punishment.jpg",
       "language": "Russian",
       "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment\n",
       "pages": 551,
       "title": "Crime and Punishment",
-      "year": 1866
+      "year": 1866,
+      "lastName": "Dostoevsky"
     },
     {
       "id": 25,
-      "author": "Fyodor Dostoevsky",
+      "author": "Fyodor",
       "country": "Russia",
       "imageLink": "images/the-idiot.jpg",
       "language": "Russian",
       "link": "https://en.wikipedia.org/wiki/The_Idiot\n",
       "pages": 656,
       "title": "The Idiot",
-      "year": 1869
+      "year": 1869,
+      "lastName": "Dostoevsky"
     },
     {
       "id": 26,
-      "author": "Fyodor Dostoevsky",
+      "author": "Fyodor",
       "country": "Russia",
       "imageLink": "images/the-possessed.jpg",
       "language": "Russian",
       "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)\n",
       "pages": 768,
       "title": "The Possessed",
-      "year": 1872
+      "year": 1872,
+      "lastName": "Dostoevsky"
     },
     {
       "id": 27,
-      "author": "Fyodor Dostoevsky",
+      "author": "Fyodor",
       "country": "Russia",
       "imageLink": "images/the-brothers-karamazov.jpg",
       "language": "Russian",
       "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
       "pages": 824,
       "title": "The Brothers Karamazov",
-      "year": 1880
+      "year": 1880,
+      "lastName": "Dostoevsky"
     },
     {
       "id": 28,
-      "author": "George Eliot",
+      "author": "George",
       "country": "United Kingdom",
       "imageLink": "images/middlemarch.jpg",
       "language": "English",
       "link": "https://en.wikipedia.org/wiki/Middlemarch\n",
       "pages": 800,
       "title": "Middlemarch",
-      "year": 1871
+      "year": 1871,
+      "lastName": "Eliot"
     },
     {
       "id": 29,
-      "author": "Ralph Ellison",
+      "author": "Ralph",
       "country": "United States",
       "imageLink": "images/invisible-man.jpg",
       "language": "English",
       "link": "https://en.wikipedia.org/wiki/Invisible_Man\n",
       "pages": 581,
       "title": "Invisible Man",
-      "year": 1952
+      "year": 1952,
+      "lastName": "Ellison"
     },
     {
       "id": 30,
@@ -370,18 +376,22 @@
       "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
       "pages": 104,
       "title": "Medea",
-      "year": -431
+      "year": -431,
+      "lastName": "",
+      "firstName": "Euripides"
     },
     {
       "id": 31,
-      "author": "William Faulkner",
+      "author": "William",
       "country": "United States",
       "imageLink": "images/absalom-absalom.jpg",
       "language": "English",
       "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!\n",
       "pages": 313,
       "title": "Absalom, Absalom!",
-      "year": 1936
+      "year": 1936,
+      "lastName": "Faulkner",
+      "firstName": "William"
     },
     {
       "id": 32,
@@ -392,7 +402,9 @@
       "link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury\n",
       "pages": 326,
       "title": "The Sound and the Fury",
-      "year": 1929
+      "year": 1929,
+      "firstName": "William",
+      "lastName": "Faulkner"
     },
     {
       "id": 33,
@@ -403,7 +415,9 @@
       "link": "https://en.wikipedia.org/wiki/Madame_Bovary\n",
       "pages": 528,
       "title": "Madame Bovary",
-      "year": 1857
+      "year": 1857,
+      "firstName": "Gustave",
+      "lastName": "Flaubert"
     },
     {
       "id": 34,
@@ -414,7 +428,9 @@
       "link": "https://en.wikipedia.org/wiki/Sentimental_Education\n",
       "pages": 606,
       "title": "Sentimental Education",
-      "year": 1869
+      "year": 1869,
+      "firstName": "Gustave",
+      "lastName": "Flaubert"
     },
     {
       "id": 35,
@@ -425,7 +441,9 @@
       "link": "https://en.wikipedia.org/wiki/Gypsy_Ballads\n",
       "pages": 218,
       "title": "Gypsy Ballads",
-      "year": 1928
+      "year": 1928,
+      "firstName": "Federico",
+      "lastName": "Garcia Lorca"
     },
     {
       "id": 36,
@@ -436,7 +454,9 @@
       "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n",
       "pages": 417,
       "title": "One Hundred Years of Solitude",
-      "year": 1967
+      "year": 1967,
+      "firstName": "Gabriel",
+      "lastName": "Garcia Marquez"
     },
     {
       "id": 37,
@@ -447,7 +467,9 @@
       "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
       "pages": 368,
       "title": "Love in the Time of Cholera",
-      "year": 1985
+      "year": 1985,
+      "firstName": "Gabriel",
+      "lastName": "Garcia Marquez"
     },
     {
       "id": 38,
@@ -458,7 +480,9 @@
       "link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust\n",
       "pages": 158,
       "title": "Faust",
-      "year": 1832
+      "year": 1832,
+      "firstName": "Johann",
+      "lastName": "Wolfgang von Goethe"
     },
     {
       "id": 39,
@@ -469,7 +493,9 @@
       "link": "https://en.wikipedia.org/wiki/Dead_Souls\n",
       "pages": 432,
       "title": "Dead Souls",
-      "year": 1842
+      "year": 1842,
+      "firstName": "Nikolai",
+      "lastName": "Gogol"
     },
     {
       "id": 40,
@@ -480,7 +506,9 @@
       "link": "https://en.wikipedia.org/wiki/The_Tin_Drum\n",
       "pages": 600,
       "title": "The Tin Drum",
-      "year": 1959
+      "year": 1959,
+      "firstName": "Gunter",
+      "lastName": "Grass"
     },
     {
       "id": 41,
@@ -491,7 +519,9 @@
       "link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands\n",
       "pages": 494,
       "title": "The Devil to Pay in the Backlands",
-      "year": 1956
+      "year": 1956,
+      "firstName": "Joao",
+      "lastName": "Guimaraes Rosa"
     },
     {
       "id": 42,
@@ -502,7 +532,9 @@
       "link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)\n",
       "pages": 176,
       "title": "Hunger",
-      "year": 1890
+      "year": 1890,
+      "firstName": "Knut",
+      "lastName": "Hamsun"
     },
     {
       "id": 43,
@@ -513,7 +545,9 @@
       "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
       "pages": 128,
       "title": "The Old Man and the Sea",
-      "year": 1952
+      "year": 1952,
+      "firstName": "Ernest",
+      "lastName": "Hemingway"
     },
     {
       "id": 44,
@@ -524,7 +558,8 @@
       "link": "https://en.wikipedia.org/wiki/Iliad\n",
       "pages": 608,
       "title": "Iliad",
-      "year": -735
+      "year": -735,
+      "firstName": "Homer"
     },
     {
       "id": 45,
@@ -535,7 +570,8 @@
       "link": "https://en.wikipedia.org/wiki/Odyssey\n",
       "pages": 374,
       "title": "Odyssey",
-      "year": -800
+      "year": -800,
+      "firstName": "Homer"
     },
     {
       "id": 46,
@@ -546,7 +582,9 @@
       "link": "https://en.wikipedia.org/wiki/A_Doll%27s_House\n",
       "pages": 68,
       "title": "A Doll's House",
-      "year": 1879
+      "year": 1879,
+      "firstName": "Henrik",
+      "lastName": "Ibsen"
     },
     {
       "id": 47,
@@ -557,7 +595,9 @@
       "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)\n",
       "pages": 228,
       "title": "Ulysses",
-      "year": 1922
+      "year": 1922,
+      "firstName": "James",
+      "lastName": "Joyce"
     },
     {
       "id": 48,
@@ -568,7 +608,9 @@
       "link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories\n",
       "pages": 488,
       "title": "Stories",
-      "year": 1924
+      "year": 1924,
+      "firstName": "Franz",
+      "lastName": "Kafka"
     },
     {
       "id": 49,
@@ -579,7 +621,9 @@
       "link": "https://en.wikipedia.org/wiki/The_Trial\n",
       "pages": 160,
       "title": "The Trial",
-      "year": 1925
+      "year": 1925,
+      "firstName": "Franz",
+      "lastName": "Kafka"
     },
     {
       "id": 50,
@@ -590,7 +634,9 @@
       "link": "https://en.wikipedia.org/wiki/The_Castle_(novel)\n",
       "pages": 352,
       "title": "The Castle",
-      "year": 1926
+      "year": 1926,
+      "firstName": "Franz",
+      "lastName": "Kafka"
     },
     {
       "id": 51,
