@@ -21,7 +21,6 @@ export default class DataServiceService extends Service {
   }
 
   async editAuthor(author) {
-    console.log(author.id);
     return await fetch(`${this.baseUrl}/authors/${author.id}`, {
       method: 'PATCH',
       headers: {

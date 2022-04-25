@@ -11,4 +11,9 @@ export default class AuthorEditController extends Controller {
     await this.dataService.editAuthor(author);
     this.router.transitionTo('author.detail', this.model.id);
   }
+
+  initData() {
+    this.firstName = this.model.firstName;
+    this.lastName = this.model.lastName;
+  }
 }

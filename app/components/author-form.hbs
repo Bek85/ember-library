@@ -1,15 +1,25 @@
 <form {{on 'submit' this.submitChanges}}>
   <div class="field">
-    <label>
+    <label for="firstName">
       First Name:
     </label>
-    <Input @type="text" placeholder="First Name" @value={{@author.firstName}} />
+    <Input
+      id="firstName"
+      @type="text"
+      placeholder="First Name"
+      @value={{@author.firstName}}
+    />
   </div>
   <div class="field">
-    <label>
+    <label for="lastName">
       Last Name:
     </label>
-    <Input @type="text" @value={{@author.lastName}} placeholder="Last Name" />
+    <Input
+      id="lastName"
+      @type="text"
+      @value={{@author.lastName}}
+      placeholder="Last Name"
+    />
   </div>
   <div class="form-footer">
     <button type="submit" class="btn-submit">

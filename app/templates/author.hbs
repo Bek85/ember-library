@@ -1,6 +1,8 @@
 {{page-title 'Author'}}
 <div class="panel-heading">
   <FaIcon @icon="coffee" @size="4x" />
+  <FaIcon @icon="square" />
+  <FaIcon @icon="square" @prefix="far" />
   <div class="search">
     <Input
       @type="text"
@@ -32,4 +34,4 @@
     </ul>
   {{/if}}
 </div>
-<LiquidOutlet class="slide-container" />
+{{liquid-outlet class='slide-container'}}

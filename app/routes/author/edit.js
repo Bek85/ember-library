@@ -6,4 +6,9 @@ export default class AuthorEditRoute extends Route {
   model({ id }) {
     return this.dataService.getAuthor(id);
   }
+
+  setupController(controller, model) {
+    super.setupController(...arguments);
+    controller.initData();
+  }
 }
