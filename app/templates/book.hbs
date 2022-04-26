@@ -1,0 +1,37 @@
+{{page-title 'Books'}}
+<div class="panel-heading">
+  <div class="search">
+    <Input
+      type="text"
+      placeholder="Search by Title or ISBN"
+      @value={{search}}
+    />
+  </div>
+  {{#if (can 'create book')}}
+    <LinkTo @route="book.create" class="btn-new">
+      <div class="sr-only">
+        Add New Book
+      </div>
+    </LinkTo>
+  {{/if}}
+</div>
+<div class="panel-content">
+  <h3 class="panel-title">
+    Books
+  </h3>
+  <ul class="collection">
+    {{#each this.model as |book|}}
+      <li>
+        <LinkTo @route="book.detail" @model={{book.id}}>
+          <span class="book-title">
+            {{book.title}}
+          </span>
+          <em class="book-isbn">
+            {{book.isbn}}
+          </em>
+        </LinkTo>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+{{liquid-outlet class='slide-container'}}

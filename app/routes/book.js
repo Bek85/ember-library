@@ -9,7 +9,7 @@ function wait(delay) {
   });
 }
 
-export default class BooksRoute extends Route {
+export default class BookRoute extends Route {
   async model() {
     return await wait(1000);
   }

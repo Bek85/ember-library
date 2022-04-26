@@ -7,4 +7,8 @@ export default class AuthorCreateRoute extends Route {
       lastName: '',
     };
   }
+
+  setupController(controller, model) {
+    super.setupController(...arguments);
+  }
 }

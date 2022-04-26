@@ -5,6 +5,7 @@ import { tracked } from '@glimmer/tracking';
 
 export default class AuthorCreateController extends Controller {
   @service() router;
+  @service() store;
   @service() dataService;
 
   @tracked firstName;
@@ -13,6 +14,8 @@ export default class AuthorCreateController extends Controller {
   @action
   async createAuthor(author) {
     await this.dataService.createAuthor(author);
+    // let newAuthor = this.store.createRecord('author', author);
+    // await newAuthor.save();
     this.router.transitionTo('author');
   }
 }

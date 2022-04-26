@@ -12,6 +12,6 @@ Router.map(function () {
     this.route('edit', { path: '/:id/edit' });
     this.route('create');
   });
-  this.route('books');
+  this.route('book', { path: '/books' }, function () {});
   this.route('not-found', { path: '*path' });
 });
