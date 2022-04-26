@@ -4,7 +4,6 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember-library',
     environment,
-    // backEndUrl: 'http://localhost:3000',
     rootURL: '/',
     locationType: 'history',
     EmberENV: {
@@ -46,7 +45,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/ember-bookApp';
+    ENV.rootURL = '/ember-library';
     // here you can enable a production-specific feature
   }
 
