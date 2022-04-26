@@ -2,8 +2,8 @@ import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
 export default class AuthorDetailRoute extends Route {
-  @service() dataService;
+  @service() store;
   model({ id }) {
-    return this.dataService.getAuthor(id);
+    return this.store.findRecord('author', id);
   }
 }
