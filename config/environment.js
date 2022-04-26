@@ -4,7 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember-library',
     environment,
-    backEndUrl: 'http://localhost:3000',
+    // backEndUrl: 'http://localhost:3000',
     rootURL: '/',
     locationType: 'history',
     EmberENV: {

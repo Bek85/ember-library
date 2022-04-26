@@ -1,8 +1,8 @@
 import Service from '@ember/service';
-import ENV from 'ember-library/config/environment';
+import config from 'ember-library/config/environment';
 
 export default class DataServiceService extends Service {
-  baseUrl = ENV.backEndUrl;
+  baseUrl = config.APP.backEndUrl;
 
   async createAuthor(author) {
     return await fetch(`${this.baseUrl}/authors`, {
